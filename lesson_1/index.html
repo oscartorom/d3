@@ -1,15 +1,49 @@
+<!-- (ctrl + shift + i) for prettier auto-format  -->
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-    <title>SVG Fundamentals</title>
-<body>
-    <svg>
-        <circle cx="50" cy="50" r="50"></circle> 
-        <!-- cx is x coordinate. cy is y coordinate r is radius -->
+  </head>
+  <title>SVG Fundamentals</title>
+  <body>
+    <svg width="960" height="500">
+      <!-- cx is x coordinate. cy is y coordinate r is radius -->
+      <circle cx="50" cy="50" r="50"></circle>
+      <circle cx="150" cy="50" r="50" fill="red"></circle>
+      <circle cx="250" cy="50" r="20" fill="green"></circle>
+      <!-- 
+      stroke is outline,  
+      stroke-width is the width
+      svg you can't control the Z-index. This is depending on the stuff in the document
+      -->
+      <rect
+        x="1"
+        y="1"
+        width="100"
+        height="200"
+        fill="none"
+        stroke="blue"
+        stroke-width="2"
+      ></rect>
+      <!-- path is a straight line from point A to point B -->
+      <line x1="0" y1="0" x2="100" y2="100" stroke="navy"></line>
+      <!-- path can be used to create almost anything... they use their own domain specific language. Used to construct line charts & area charts
+       d = domain specific string, for SVG paths. Move your pen
+       m = move to command... if we want to move to a coordinate e.g. 400.400
+       l = line to... or draw a line to....
+      -->
+      <path
+        d="m200.508 6.726c1.765-2.836 4.911-4.726 8.495-4.726 5.518 0 9.997 4.48 9.997 9.997 0 5.519-4.479 9.999-9.997 9.999-5.245 0-9.553-4.048-9.966-9.188-.024-.302.189-.811.749-.811.391 0 .715.3.747.69.351 4.369 4.012 7.809 8.47 7.809 4.69 0 8.497-3.808 8.497-8.499 0-4.689-3.807-8.497-8.497-8.497-3.037 0-5.704 1.597-7.206 3.995l1.991.005c.414 0 .75.336.75.75s-.336.75-.75.75h-4.033c-.414 0-.75-.336-.75-.75v-4.049c0-.414.336-.75.75-.75s.75.335.75.75z"
+      ></path>
+      <path
+        d="M200,200L300,300L300,400"
+        stroke="black"
+        fill="none"
+        stroke-width="10"
+      ></path>
     </svg>
-</body>
+  </body>
 </html>
