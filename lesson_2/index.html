@@ -4,18 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pseudo-Visualisations</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      text {
+        font-size: 72px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+    </style>
   </head>
   <body>
     <h1>Pseudo-Scatterplot</h1>
     <!-- Collection of circles -->
     <svg width="960" height="500" fill="none" stroke="black">
-      <rect width="960" height="500" fill="white"></rect>
       <circle cx="132.5" cy="391.5" r="34.5" fill="black"></circle>
       <circle cx="330.5" cy="349.5" r="34.5" fill="black"></circle>
       <circle cx="410.5" cy="192.5" r="34.5" fill="black"></circle>
       <circle cx="527.5" cy="275.5" r="34.5" fill="black"></circle>
       <circle cx="688.5" cy="119.5" r="34.5" fill="black"></circle>
       <circle cx="878.5" cy="55.5" r="34.5" fill="black"></circle>
+    </svg>
+
+    <!-- Collection of rectangles -->
+    <h1>Pseudo barchart</h1>
+    <svg width="960" height="500" fill="none" stroke="black">
+      <rect x="43" y="34" width="190" height="424" fill="black"></rect>
+      <rect x="270" y="161" width="190" height="297" fill="black"></rect>
+      <rect x="497" y="253" width="190" height="205" fill="black"></rect>
+      <rect x="724" y="343" width="190" height="115" fill="black"></rect>
+    </svg>
+
+    <h1>Pseudo horizontal barchart</h1>
+    <svg width="960" height="500" stroke="black">
+      <rect x="122" y="27" , width="802" , height="100"></rect>
+      <rect x="122" y="143" , width="515" , height="100"></rect>
+      <rect x="122" y="260" , width="361" , height="100"></rect>
+      <rect x="122" y="376" , width="241" , height="100"></rect>
+      <!-- Add text -->
+      <text x="50" y="100">A</text>
+      <text x="50" y="210">B</text>
+      <text x="50" y="330">C</text>
+      <text x="50" y="440">D</text>
     </svg>
   </body>
 </html>
